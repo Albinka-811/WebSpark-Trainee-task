@@ -1,0 +1,100 @@
+.header {
+  height: 172px;
+  display: flex;
+  padding-left: 355px;
+  background: rgba(255, 255, 255, 0.67);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12), inset 0 12px 24px rgba(0, 0, 0, 0.12);
+
+  &-logo {
+    &__image {
+      width: 138px;
+      height: 138px;
+      margin-top: 6px;
+    }
+  }
+
+  &-event {
+    margin-left: 90px;
+    margin-top: 33px;
+
+    &-title {
+      display: flex;
+      align-items: center;
+      align-content: center;
+
+      &__name {
+        font-family: $fondMontserrat;
+        font-size: 24px;
+        margin: 0 16px 0 0;
+      }
+
+      &__start {
+        font-family: $fondRoboto;
+        font-size: 13px;
+        color: $blue;
+        border:1px solid $blue ;
+        border-radius: 2px;
+        padding: 6px 12px;
+        margin: 0;
+      }
+    }
+
+    &-statistics {
+      margin-top: 16px;
+
+      &__posts,
+      &__followers,
+      &__following {
+        font-family: $fondRoboto;
+        font-size: $fondSizeS;
+        font-weight: 700;
+        margin-right: 28px;
+      }
+    }
+
+    &-filters {
+      margin-top: 19px;
+      font-family: $fondRoboto;
+      font-size: $fondSizeM;
+
+      &__startdate,
+      &__enddate {
+        width: 112px;
+        height: 28px;
+        border: 1px solid $grey;
+        border-radius: 4px 0 0 4px;
+        padding: 6px 0 6px 8px;
+
+        &:focus {}
+        outline: none;
+      }
+    }
+  }
+}
+
+.custom-datepicker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 22px;
+
+  &-btn {
+    cursor: pointer;
+    appearance: none;
+    border: none;
+    background-color: #DEDEDE;
+    width: 28px;
+    height: 28px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken(#DEDEDE, 15%);
+    }
+
+    &:last-child {
+      border-radius: 0 4px 4px 0;
+    }
+  }
+}
+
+

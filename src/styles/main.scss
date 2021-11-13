@@ -1,0 +1,40 @@
+@import '~vanillajs-datepicker/sass/datepicker';
+@import "helpers/variables";
+@import "components/header.scss";
+@import 'components/events';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  background: #FAFAFA;
+}
+
+body {
+  padding-bottom: 100px;
+}
+
+button,
+img,
+input,
+span {
+  cursor: pointer;
+}
+
+body {
+  background-image: url("../assets/images/background/picture.png"),
+                    url("../assets/images/background/picture2.png");
+  background-repeat: no-repeat;
+  background-position: 0 0, 100% 786px;
+}
+
+.container {
+  max-width: 836px;
+  margin: 0 auto;
+}
+
